@@ -4836,7 +4836,7 @@ _G.SelectWeapon = "Melee"
      	end
     end)
 
-   AutoFarm:Toggle("Auto Farm Level",false,function(value)
+   AutoFarm:Toggle("فارم لفل تلقائي",false,function(value)
     _G.AutoFarm = value
       StopTween(_G.AutoFarm)		
        end)
@@ -4977,10 +4977,10 @@ _G.SelectWeapon = "Melee"
              end
           end)
           
-     AutoFarm:Seperator("Auto Farm Mastery")       
+     AutoFarm:Seperator("فارم ماستري تلقائي")       
      
      if World1 or World2 then
-     AutoFarm:Dropdown("Select Regime Farm",{"Farm Level Mastery", "Farm Level Mastery No Quest"},{"Farm Level Mastery No Quest"},function(Value)
+     AutoFarm:Dropdown("اختيار فارم نظام",{"فارم لفل ماستري", "فارم ماستري بدون مهام"},{"فارم ماستري لفل بدون مهام"},function(Value)
        _G.selectFruitFarm = Value
       end)
     end      
